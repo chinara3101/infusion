@@ -1,0 +1,128 @@
+
+header
+	background: $colorsea-green
+	font-size: 14px
+	color: $black_txt
+	overflow: hidden
+	+mobile
+		overflow: visible
+	
+header .container
+	position: relative
+.wrapper
+	+position(0,auto,auto,90%)
+	width: 300%
+	height: 100%
+	background: #fff
+	display: block
+	+mobile
+		display: none
+h1
+	float: left
+	padding: 0
+	margin: 0
+.logo	
+	display: block
+	text-decoration: none
+	background: $colorsea-green
+	padding: 19px 39px 19px 35px
+	margin: 0
+	a 
+		color: #fff
+.menu
+	display: block 
+	width: 79%
+	background: #fff
+	float: left
+	position: relative
+	z-index: 10
+	padding: 0 0 4px 6px
+	margin: 0 0 0 -1px
+	+sm
+		width: 74%
+		float: right
+		margin: 0
+	+xs
+		display: none
+		width: 200px
+		background: $color-dark
+		position: absolute
+		top: 73px
+		right: 0
+		z-index: 10
+		
+.menu ul
+	margin: 0
+	padding:  0
+	list-style: none
+.menu li
+	display: inline-block
+	margin: 0
+	padding: 0 
+	+xs
+		display: block
+
+.menu li a
+	display: inline-block
+	padding: 27px 8px 27px 30px
+	color: #909698
+	font-size: 14px
+	text-decoration: none
+	text-transform: uppercase
+	font-weight: 700
+	+sm
+		padding: 27px 2px 27px 4px
+	+xs
+		display: block
+		padding: 15px 10px
+		color: #fff
+.menu li a:hover
+	color: $colorsea-green
+	
+.menu-btn
+	float: right
+	width: 70px
+	height: 73px
+	background: $color-dark
+	position: relative
+	display: none	
+	+xs
+		display: block
+		margin: 0
+.menu-btn span
+	width: 18px
+	height: 2px
+	background: #fff
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -1px  0 0 -9px
+.menu-btn span::before,.menu-btn span::after
+	content: ""
+	width: 18px
+	height: 2px
+	background: #fff
+	position: absolute
+	left: 0
+
+.menu-btn span::before
+	top: -5px
+
+.menu-btn span::after
+	bottom: -5px
+
+.menu-btn .is-active span
+	background: transparent
+
+.menu-btn .is-active::before
+	transform: rotate(45deg)
+	top: 0
+
+.menu-btn .is-active::after
+	transform: rotate(90deg)
+	bottom: 0
+
+
+	
+	
+	

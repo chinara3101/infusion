@@ -1,0 +1,68 @@
+.services_items
+	width:	100%
+	display: flex
+	padding: 0 0 127px 17px
+	margin: 0 
+	+tablet	
+		flex-wrap: wrap
+		padding: 0 0 50px 17px
+		width:	80%
+		margin: 0 0 0 20%	
+	+xs
+		width: 90
+		margin: 0 0 0 10%	
+.services_item
+	width: 24.2%
+	text-align: left	
+	padding: 0 0 15px 0 
+	border-left: 1px solid #f3f5f7
+	outline: transparent
+	position: relative
+	margin: 0 0 10px 1.5%
+	+sm
+		width: 33%
+	+xs
+		width: 48%
+	+mobile
+		width: 90%
+		margin: 0 auto
+.services_item:hover
+	outline: 4px solid $colorsea-green
+.services_item:hover .photo
+	border: 4px solid $colorsea-green	
+.services_item a
+	text-decoration: none
+	display: block
+	position: relative
+.services_item a img
+	display: block
+	width: 100%
+	height: auto
+.photo
+	width: 80px
+	height: 80px
+	border-radius: 50%
+	border: 4px solid #fff
+	+position(120px,auto,auto,50%)
+	margin: 0 0 -28px -45px	
+	overflow: hidden
+	+sm
+		+position(100px,auto,auto,50%)
+	+mobile
+		+position(90px,auto,auto,50%)
+
+.photo img
+	display: block
+	width: 100%
+	height: auto
+.services_item h5	
+	font-weight: 400
+	font-size: 21px
+	line-height: 27px
+	padding: 41px 0 17px 34px
+	margin: 0 
+.services_item p
+	line-height: 24px
+	font-weight: 400
+	padding: 0 22px 0 34px
+	margin: 0 
